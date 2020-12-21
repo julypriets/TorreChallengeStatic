@@ -3,8 +3,8 @@
     color: $color-primary;
     border: none;
     background-color: transparent;
-    font-weight: 500;
     font-family: inherit;
+    font-size: $font-size-md;
     cursor: pointer;
     transition: all 0.3s;
     padding: 0.6rem 1.5rem;
@@ -26,7 +26,7 @@
   height: 8rem;
   width: calc(50% - 3rem);
   position: relative;
-  margin-right: 1.5rem;
+  margin-right: 2rem;
   margin-bottom: 1.5rem;
 
   &__img {
@@ -134,5 +134,87 @@
 
   &__button {
     margin-right: 3rem;
+  }
+}
+
+.suggested-course-card {
+  min-width: 25rem;
+  width: 25rem;
+  box-shadow: $default-box-shadow;
+  background-color: $color-dark;
+  position: relative;
+  margin-right: 2rem;
+
+  &__img {
+    height: 12rem;
+    width: 100%;
+    background-color: $color-dark-gray;
+    object-fit: cover;
+
+    &--sm {
+      height: 3.5rem;
+      width: 8rem;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      top: 42%;
+      box-shadow: $default-box-shadow;
+    }
+  }
+
+  &__content {
+    padding: 1.8rem 1.8rem 2rem 1.8rem;
+  }
+
+  &__title {
+    color: $color-light;
+    font-size: $font-size-md;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__subtitle {
+    font-size: $font-size-xs;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+  }
+}
+
+.overview-card {
+  height: 20rem;
+  min-width: 25rem;
+  width: 25rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(
+      to top,
+      rgba($color-dark, 1) 20%,
+      rgba($color-dark, 0.5) 60%,
+      transparent
+    ),
+    url("https://www.linuxadictos.com/wp-content/uploads/kubernetes-logo.jpg");
+  background-size: cover;
+  background-position: center center;
+
+  &__title {
+    font-size: $font-size-sm;
+    color: $color-light;
+  }
+
+  &__subtitle {
+    font-size: $font-size-xs;
+    color: $color-light;
+  }
+
+  &__text {
+    font-size: $font-size-xxs;
+    color: $color-primary;
   }
 }

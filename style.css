@@ -46,7 +46,8 @@ body {
 
 .heading-secondary {
   color: #e9eaea;
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  font-weight: 500; }
 
 .heading-tertiary {
   color: #e9eaea;
@@ -130,8 +131,8 @@ body {
   color: #cddc39;
   border: none;
   background-color: transparent;
-  font-weight: 500;
   font-family: inherit;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.3s;
   padding: 0.6rem 1.5rem; }
@@ -148,7 +149,7 @@ body {
   height: 8rem;
   width: calc(50% - 3rem);
   position: relative;
-  margin-right: 1.5rem;
+  margin-right: 2rem;
   margin-bottom: 1.5rem; }
   .course-card__img {
     object-fit: cover;
@@ -223,6 +224,62 @@ body {
   .job-card__button {
     margin-right: 3rem; }
 
+.suggested-course-card {
+  min-width: 25rem;
+  width: 25rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #27292d;
+  position: relative;
+  margin-right: 2rem; }
+  .suggested-course-card__img {
+    height: 12rem;
+    width: 100%;
+    background-color: #414346;
+    object-fit: cover; }
+    .suggested-course-card__img--sm {
+      height: 3.5rem;
+      width: 8rem;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      top: 42%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .suggested-course-card__content {
+    padding: 1.8rem 1.8rem 2rem 1.8rem; }
+  .suggested-course-card__title {
+    color: #e9eaea;
+    font-size: 1.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .suggested-course-card__subtitle {
+    font-size: 1.3rem; }
+  .suggested-course-card__bottom {
+    position: absolute;
+    bottom: 0;
+    right: 1rem; }
+
+.overview-card {
+  height: 20rem;
+  min-width: 25rem;
+  width: 25rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(to top, #27292d 20%, rgba(39, 41, 45, 0.5) 60%, transparent), url("https://www.linuxadictos.com/wp-content/uploads/kubernetes-logo.jpg");
+  background-size: cover;
+  background-position: center center; }
+  .overview-card__title {
+    font-size: 1.4rem;
+    color: #e9eaea; }
+  .overview-card__subtitle {
+    font-size: 1.3rem;
+    color: #e9eaea; }
+  .overview-card__text {
+    font-size: 1.2rem;
+    color: #cddc39; }
+
 .container {
   height: 100%;
   width: 100%; }
@@ -235,10 +292,10 @@ body {
 .learning {
   display: flex; }
   .learning__left {
-    width: 60%;
+    width: 62%;
     padding: 3rem 1rem 0 8rem;
     margin-bottom: 5rem;
-    height: fit-content; }
+    height: max-content; }
   .learning__quote {
     color: #b4b4b6;
     max-width: 80%; }
@@ -254,8 +311,73 @@ body {
     .learning__jobs-cards {
       margin-top: 3rem; }
   .learning__right {
-    width: 40%;
-    height: 100%;
-    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
-    position: sticky;
-    top: 0; }
+    width: 38%;
+    height: max-content;
+    align-self: stretch;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25); }
+  .learning__card {
+    display: flex;
+    align-items: center;
+    padding: 1rem 6rem 1rem 3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    .learning__card-img {
+      height: 8rem;
+      width: 8rem;
+      border-radius: 50%;
+      background-color: #414346;
+      margin-right: 2rem;
+      clip-path: polygon(45% 1.33975%, 46.5798% 0.60307%, 48.26352% 0.15192%, 50% 0, 51.73648% 0.15192%, 53.4202% 0.60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%); }
+    .learning__card-content {
+      width: calc(100% - 8rem); }
+    .learning__card-header-wrap {
+      margin-top: 1.6rem;
+      display: flex;
+      justify-content: space-between; }
+    .learning__card-next-level {
+      color: #e9eaea;
+      font-size: 1.4rem; }
+      .learning__card-next-level--primary {
+        font-size: 1.4rem;
+        color: #cddc39;
+        font-weight: 500; }
+    .learning__card-level {
+      font-size: 1.3rem;
+      margin-right: 1rem; }
+      .learning__card-level-wrap {
+        display: flex;
+        align-items: center; }
+        .learning__card-level-wrap span {
+          font-size: 1.8rem;
+          color: #414346; }
+    .learning__card-progress {
+      background-color: #27292d;
+      height: 1rem;
+      width: 60%;
+      margin-top: 1.5rem; }
+      .learning__card-progress-bar {
+        background-color: #cddc39;
+        height: 100%;
+        width: 20%; }
+    .learning__card-hours {
+      font-size: 1.2rem;
+      margin: 1rem 0 1rem 0; }
+  .learning__suggested {
+    padding: 3rem 4rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    .learning__suggested-subtitle, .learning__overview-subtitle {
+      font-size: 1.4rem;
+      margin-top: 1rem; }
+    .learning__suggested-cards {
+      margin-top: 2.5rem;
+      display: flex;
+      overflow-x: hidden; }
+      .learning__suggested-cards:hover {
+        overflow-x: auto; }
+  .learning__overview {
+    padding: 3rem 4rem; }
+    .learning__overview-cards {
+      margin-top: 2rem;
+      display: flex;
+      overflow-x: hidden; }
+      .learning__overview-cards:hover {
+        overflow-x: auto; }
