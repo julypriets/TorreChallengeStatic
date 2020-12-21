@@ -127,11 +127,27 @@
       &-wrap {
         display: flex;
         align-items: center;
+        position: relative;
 
         & span {
           font-size: $font-size-lg;
           color: $color-dark-gray;
         }
+
+        &:hover .learning__card-level-info {
+          display: block;
+        }
+      }
+
+      &-info {
+        position: absolute;
+        right: -25rem;
+        top: -1rem;
+        background-color: rgba($color-dark, 0.9);
+        font-size: $font-size-xxs;
+        width: 29rem;
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+        display: none;
       }
     }
 

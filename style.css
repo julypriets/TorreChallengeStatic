@@ -345,10 +345,22 @@ body {
       margin-right: 1rem; }
       .learning__card-level-wrap {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        position: relative; }
         .learning__card-level-wrap span {
           font-size: 1.8rem;
           color: #414346; }
+        .learning__card-level-wrap:hover .learning__card-level-info {
+          display: block; }
+      .learning__card-level-info {
+        position: absolute;
+        right: -25rem;
+        top: -1rem;
+        background-color: rgba(39, 41, 45, 0.9);
+        font-size: 1.2rem;
+        width: 29rem;
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+        display: none; }
     .learning__card-progress {
       background-color: #27292d;
       height: 1rem;
