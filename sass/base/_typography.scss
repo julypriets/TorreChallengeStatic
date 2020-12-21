@@ -8,14 +8,13 @@ $font-size-xs: 1.3rem;
 $font-size-xxs: 1.2rem;
 
 $font-size-heading-primary: 4rem;
-$font-size-heading-secondary: 3.2rem;
-$font-size-heading-tertiary: 2.4rem;
-
-$font-size-button: 1.9rem;
+$font-size-heading-secondary: 2.4rem;
+$font-size-heading-tertiary: 2rem;
 
 body {
   font-family: "Noto Sans JP", sans-serif;
   font-size: $font-size-default;
+  color: $color-gray;
 }
 
 // HEADINGS
@@ -26,11 +25,15 @@ body {
 }
 
 .heading-secondary {
+  color: $color-light;
+  font-size: $font-size-heading-secondary;
 }
 
 .heading-tertiary {
   color: $color-light;
   font-size: $font-size-heading-tertiary;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
 .heading-quaternary {

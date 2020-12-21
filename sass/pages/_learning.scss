@@ -1,17 +1,44 @@
 .learning {
+  display: flex;
+
   &__left {
     width: 60%;
-  }
-
-  &__right {
-    width: 40%;
+    padding: 3rem 1rem 0 8rem;
+    margin-bottom: 5rem;
+    height: fit-content;
   }
 
   &__quote {
     color: $color-gray;
+    max-width: 80%;
   }
 
   &__courses {
     margin-top: 4rem;
+
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__section {
+    margin-top: 2rem;
+  }
+
+  &__jobs {
+    margin-top: 5rem;
+
+    &-cards {
+      margin-top: 3rem;
+    }
+  }
+
+  &__right {
+    width: 40%;
+    height: 100%;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
   }
 }
