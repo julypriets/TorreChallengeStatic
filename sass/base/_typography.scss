@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+
+$font-size-lg: 1.8rem;
+$font-size-default: 1.6rem;
+$font-size-md: 1.5rem;
+$font-size-sm: 1.4rem;
+$font-size-xs: 1.3rem;
+$font-size-xxs: 1.2rem;
+
+$font-size-heading-primary: 4rem;
+$font-size-heading-secondary: 3.2rem;
+$font-size-heading-tertiary: 2.4rem;
+
+$font-size-button: 1.9rem;
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: $font-size-default;
+}
+
+// HEADINGS
+.heading-primary {
+  font-size: $font-size-heading-primary;
+  color: $color-light;
+  margin-bottom: 2rem;
+}
+
+.heading-secondary {
+}
+
+.heading-tertiary {
+  color: $color-light;
+  font-size: $font-size-heading-tertiary;
+}
+
+.heading-quaternary {
+}
+
+@font-face {
+  font-family: "FS Albert";
+  src: url("../../fonts/../../fonts/FSAlbert.eot");
+  src: url("../../fonts/FSAlbert.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/FSAlbert.woff2") format("woff2"),
+    url("../../fonts/FSAlbert.woff") format("woff"),
+    url("../../fonts/FSAlbert.ttf") format("truetype"),
+    url("../../fonts/FSAlbert.svg#FSAlbert") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FS Albert";
+  src: url("../../fonts/FSAlbert-Bold.eot");
+  src: url("../../fonts/FSAlbert-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/FSAlbert-Bold.woff2") format("woff2"),
+    url("../../fonts/FSAlbert-Bold.woff") format("woff"),
+    url("../../fonts/FSAlbert-Bold.ttf") format("truetype"),
+    url("../../fonts/FSAlbert-Bold.svg#FSAlbert-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FS Albert";
+  src: url("../../fonts/FSAlbert-BoldItalic.eot");
+  src: url("../../fonts/FSAlbert-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/FSAlbert-BoldItalic.woff2") format("woff2"),
+    url("../../fonts/FSAlbert-BoldItalic.woff") format("woff"),
+    url("../../fonts/FSAlbert-BoldItalic.ttf") format("truetype"),
+    url("../../fonts/FSAlbert-BoldItalic.svg#FSAlbert-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FS Albert";
+  src: url("../../fonts/FSAlbert-Thin.eot");
+  src: url("../../fonts/FSAlbert-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/FSAlbert-Thin.woff2") format("woff2"),
+    url("../../fonts/FSAlbert-Thin.woff") format("woff"),
+    url("../../fonts/FSAlbert-Thin.ttf") format("truetype"),
+    url("../../fonts/FSAlbert-Thin.svg#FSAlbert-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FS Albert";
+  src: url("../../fonts/FSAlbert-Italic.eot");
+  src: url("../../fonts/FSAlbert-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/FSAlbert-Italic.woff2") format("woff2"),
+    url("../../fonts/FSAlbert-Italic.woff") format("woff"),
+    url("../../fonts/FSAlbert-Italic.ttf") format("truetype"),
+    url("../../fonts/FSAlbert-Italic.svg#FSAlbert-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FS Albert";
+  src: url("../../fonts/FSAlbert-ThinItalic.eot");
+  src: url("../../fonts/FSAlbert-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/FSAlbert-ThinItalic.woff2") format("woff2"),
+    url("../../fonts/FSAlbert-ThinItalic.woff") format("woff"),
+    url("../../fonts/FSAlbert-ThinItalic.ttf") format("truetype"),
+    url("../../fonts/FSAlbert-ThinItalic.svg#FSAlbert-ThinItalic") format("svg");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FS Albert";
+  src: url("../../fonts/FSAlbert-LightItalic.eot");
+  src: url("../../fonts/FSAlbert-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/FSAlbert-LightItalic.woff2") format("woff2"),
+    url("../../fonts/FSAlbert-LightItalic.woff") format("woff"),
+    url("../../fonts/FSAlbert-LightItalic.ttf") format("truetype"),
+    url("../../fonts/FSAlbert-LightItalic.svg#FSAlbert-LightItalic")
+      format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FS Albert";
+  src: url("../../fonts/FSAlbert-Light.eot");
+  src: url("../../fonts/FSAlbert-Light.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/FSAlbert-Light.woff2") format("woff2"),
+    url("../../fonts/FSAlbert-Light.woff") format("woff"),
+    url("../../fonts/FSAlbert-Light.ttf") format("truetype"),
+    url("../../fonts/FSAlbert-Light.svg#FSAlbert-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

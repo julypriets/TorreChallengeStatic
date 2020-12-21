@@ -1,0 +1,20 @@
+{
+  "name": "torrechallengestatic",
+  "version": "1.0.0",
+  "description": "Static project to write HTML and Sass in order to implement the website's UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julypriets/TorreChallengeStatic.git"
+  },
+  "author": "Juliana Prieto Arcila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julypriets/TorreChallengeStatic/issues"
+  },
+  "homepage": "https://github.com/julypriets/TorreChallengeStatic#readme"
+}

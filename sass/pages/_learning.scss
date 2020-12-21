@@ -1,0 +1,17 @@
+.learning {
+  &__left {
+    width: 60%;
+  }
+
+  &__right {
+    width: 40%;
+  }
+
+  &__quote {
+    color: $color-gray;
+  }
+
+  &__courses {
+    margin-top: 4rem;
+  }
+}
